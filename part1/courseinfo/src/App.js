@@ -35,7 +35,7 @@ import React, {useState} from 'react'
    const Part = (props) => {
      return (
        <>
-       <p>Part {props.name} has {props.exercises}</p>
+       <p>Part - {props.name} has {props.exercises}</p>
        </>
      )
     
