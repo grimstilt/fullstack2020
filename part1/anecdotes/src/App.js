@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 const Button = ({ handleClick, text}) => <button onClick={handleClick}>{text}</button>
 
 const Max = ({ votes, anecdotes }) => {
+  const hig = votes.Max
+  console.log('Hello');
   const maximum = Math.max(...votes)
   const i = votes.indexOf(maximum)
   return (
