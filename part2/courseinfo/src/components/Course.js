@@ -26,7 +26,7 @@ const Total = ({ parts }) => {
 const Course = ({ course }) => {
     return (
     <div>
-        <h1>{course.name}</h1>
+        <h2>{course.name}</h2>
         <Content parts={course.parts} />
     </div>
     )
