@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+ import React, { useState, useEffect } from 'react'
 import Persons from './components/Persons'
 import Filter from './components/Filter'
 import PersonForm from './components/PersonForm'
@@ -73,6 +73,9 @@ const App = () => {
         setTimeout(() => setMessage(null), 5000)
         setNewName('')
         setNewNum('')
+      })
+      .catch(error => {
+        setErrorMessage(`${JSON.stringify(error.response.data.error)}`)
       })
     }
   }
